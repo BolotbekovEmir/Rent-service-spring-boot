@@ -1,0 +1,18 @@
+Hello, %s.
+
+Your order has been successfully processed.
+
+Information about the rented car:
+Name: %s
+Year of Production: %s
+Model Class: %s
+Body Type: %s
+VIN: %s
+
+Rental Agreement Details:
+Start Date: %s
+End Date: %s
+Number of Days: %d
+Total Payment Amount: %s $
+
+Thank you for using our services!
