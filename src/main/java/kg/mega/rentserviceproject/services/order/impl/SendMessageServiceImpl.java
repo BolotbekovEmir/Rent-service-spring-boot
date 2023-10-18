@@ -64,7 +64,7 @@ public class SendMessageServiceImpl implements SendMessageService {
             properties.setProperty("mail.smtp.starttls.enable", "true");
             Session session = Session.getInstance(properties, new Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("bolotbekove32@gmail.com", "whpd jabu tbss paho");
+                    return new PasswordAuthentication("${spring.mail.username}", "${spring.mail.password}");
                 }
             });
 
