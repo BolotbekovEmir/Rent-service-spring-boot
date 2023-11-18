@@ -1,4 +1,4 @@
-package kg.mega.rentserviceproject.configurations;
+package kg.mega.rentserviceproject.configuration;
 
 import java.util.regex.Pattern;
 

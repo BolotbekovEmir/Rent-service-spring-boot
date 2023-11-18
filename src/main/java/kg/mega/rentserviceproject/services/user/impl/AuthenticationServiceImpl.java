@@ -5,7 +5,7 @@ import kg.mega.rentserviceproject.exceptions.user.AuthorizationException;
 import kg.mega.rentserviceproject.exceptions.user.UserNotFoundException;
 import kg.mega.rentserviceproject.models.user.User;
 import kg.mega.rentserviceproject.repositories.user.UserRepo;
-import kg.mega.rentserviceproject.services.user.AuthorizationService;
+import kg.mega.rentserviceproject.services.user.AuthenticationService;
 import kg.mega.rentserviceproject.services.user.SessionService;
 import kg.mega.rentserviceproject.services.user.UserValidationService;
 import lombok.RequiredArgsConstructor;
@@ -13,14 +13,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class AuthorizationServiceImpl implements AuthorizationService {
+public class AuthenticationServiceImpl implements AuthenticationService {
     private final UserRepo userRepo;
 
     private final SessionService sessionService;
     private final UserValidationService validationService;
 
     @Override
-    public String authorization(UserAuthDTO userAuthDTO) {
+    public String authentication(UserAuthDTO userAuthDTO) {
         String
             username = userAuthDTO.username(),
             password = userAuthDTO.password();

@@ -1,6 +1,6 @@
 package kg.mega.rentserviceproject.services.user.impl;
 
-import kg.mega.rentserviceproject.configurations.PatternConfig;
+import kg.mega.rentserviceproject.configuration.PatternConfig;
 import kg.mega.rentserviceproject.exceptions.DuplicateException;
 import kg.mega.rentserviceproject.exceptions.user.IncorrectFormatException;
 import kg.mega.rentserviceproject.exceptions.user.InvalidSessionException;

@@ -1,4 +1,4 @@
-package kg.mega.rentserviceproject.configurations;
+package kg.mega.rentserviceproject.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -13,6 +13,7 @@ import kg.mega.rentserviceproject.repositories.order.OrderRepo;
 import kg.mega.rentserviceproject.repositories.order.PriceRepo;
 import kg.mega.rentserviceproject.services.order.FormingOrderService;
 import kg.mega.rentserviceproject.services.order.GetOrderService;
+import kg.mega.rentserviceproject.services.order.OrderValidationService;
 import kg.mega.rentserviceproject.services.order.SendMessageService;
 import kg.mega.rentserviceproject.services.user.SessionService;
 import kg.mega.rentserviceproject.services.user.UserValidationService;
@@ -39,7 +40,7 @@ public class FormingOrderServiceImpl implements FormingOrderService {
     private final GetOrderService getOrderService;
     private final SendMessageService sendMessageService;
     private final UserValidationService userValidationService;
-    private final OrderValidationServiceImpl orderValidationService;
+    private final OrderValidationService orderValidationService;
 
     @Override
     @Transactional

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class UserController {
-    private final AuthorizationService authorizationService;
+    private final AuthenticationService authenticationService;
     private final RegistrationService registrationService;
     private final ChangePasswordService passwordService;
     private final EditProfileService editProfileService;
@@ -24,8 +24,8 @@ public class UserController {
     }
 
     @PostMapping("authorization")
-    public String authorization(@RequestBody UserAuthDTO userAuthDTO) {
-        return authorizationService.authorization(userAuthDTO);
+    public String authentication(@RequestBody UserAuthDTO userAuthDTO) {
+        return authenticationService.authentication(userAuthDTO);
     }
 
     @GetMapping("get-profile")
